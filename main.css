@@ -4,8 +4,8 @@ html{
 }
 
 h1{
-    font-size: 3em;
-    font-weight: 700;
+    font-size: 5vh;
+    font-weight: 500;
 }
 h2{
     font-size: 4em;
@@ -41,15 +41,15 @@ h6{
 .landing{
  height: 100vh;
  width: 100%;
-display: flex;
+ display: flex;
 }
 .main-header{
     width: 75%;
     margin: auto;
-    height: 50%;
+    height: 60vh;
     display: grid;
-    grid-template-rows:25% 25% 50%;
-    grid-template-columns:10% 80% 10%;
+    grid-template-rows:1fr 1fr 2fr;
+    grid-template-columns:10% auto 10%;
     transition: 2s;
 }
 #hero-img{
@@ -71,16 +71,15 @@ display: flex;
     grid-column-start: 2;
     grid-column-end: 3;
     display: flex;
-    width: 25%;
-    justify-content: space-between;
     align-self: center;
 }
 .main-nav a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2.5vh;
     font-weight: 700;
     color: #19282B;
     letter-spacing: 1px;
+    margin-right: 5vw;
 }
 .main-nav a:hover{
     color:#FFAA00;
