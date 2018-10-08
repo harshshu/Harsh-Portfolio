@@ -104,11 +104,12 @@ h6 {
     transition: 1s;
 }
 
-footer {
+footer{
     height: 10vh;
     background-color: #19282B;
     display: flex;
     justify-content: center;
+
 }
 
 .social-icons {
@@ -132,6 +133,7 @@ a i:hover {
     width: 75vw;
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -162,7 +164,8 @@ a i:hover {
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% auto;
     align-items: center;
     border-radius: 25px;
     transition: 1s;
@@ -171,20 +174,108 @@ a i:hover {
    grid-column-start: 1;
     grid-column-end: 4;
     background-color:blue;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% auto;
     align-items: center;
     border-radius: 25px;
     transition: 1s;
     
 }
-#be-link{
-    margin-left: 15vh;
+.container-2 a{
+    grid-column-start: 2;
+
 }
 .spartan-link-h4{
-    margin-left: 15vh;
+    grid-column-start: 2;
+    text-decoration: none;
+    color:#FFF9EC;;
+    font-size: 2.5vh;
+    font-weight:500;
+    letter-spacing: 1px;
 }
-.container-2:hover{
-    background-color: darkblue;
-    cursor: pointer;
+.spartan-link-h4:hover{
+    color: #FFAA00;
     transition: 1s;
 }
+
+
+@media (min-width: 200px) and (max-width:770px) {
+    
+   .main-header {
+        min-height: 85vh;
+        width: 95%;
+    }
+    .work-info {
+        height: 50vh;
+        width: 90%;
+    }
+
+    .footer {
+        height: 8vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .social-icons {
+        width: 75%;
+    }
+
+    .spartan-link-h4 {
+        font-size: 1.8vh;
+    }
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (min-width: 700px) {
+    .main-header {
+        min-height: 85vh;
+        width: 95%;
+    }
+    .work-info {
+        height: 50vh;
+        width: 90%;
+    }
+
+    .footer {
+        height: 8vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .social-icons {
+        width: 25em;
+    }
+
+    .spartan-link-h4 {
+        font-size: 1.8vh;
+    }
+
+}
+*/
